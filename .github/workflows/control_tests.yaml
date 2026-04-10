@@ -3,9 +3,9 @@ on: push
 jobs:
   qa:
     name: Check tests
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout on master 
+      - name: Checkout on main 
         uses: actions/checkout@v3
 
       - name: Set up Python
